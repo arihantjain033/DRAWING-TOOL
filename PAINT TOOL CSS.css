@@ -1,0 +1,287 @@
+#body{
+    background-color: aliceblue;
+    background-size: cover;
+}
+
+#horizontalrow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#firstbox {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid rgb(239, 210, 170);
+    border-radius: 20px;
+    background-color: rgb(239, 210, 170);
+}
+
+.buttonfirstbox {
+    width: 70px;
+    border: none;
+    background-color: rgb(239, 210, 170);
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2px;
+
+}
+
+
+
+
+#texteditors {
+    width: 150px;
+    height: 100px;
+    border: 1px solid rgb(245, 181, 160);
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(244, 199, 184);
+}
+
+.editors {
+    height: 35px;
+    width: 35px;
+    margin-top: 6px;
+}
+
+.editors { 
+    transition: all .5s ease-in-out; 
+    }
+    
+.editors:hover { 
+    transform: scale(0.9); 
+    }
+
+#size{
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#addtext {
+    height: 25px;
+    width: 25px;
+    
+}
+
+#linesize {
+    border: 1px solid lightgrey;
+    border-width: 2px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.lines {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.lines:hover {
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+}
+
+#line2 {
+    height: 4px;
+}
+
+#line3 {
+    height: 6px;
+}
+
+#line4 {
+    height: 8px;
+}
+
+#line1 {
+    height: 2px;
+}
+
+
+#colors {
+    border: 1px solid black;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.colorimages {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 50px;
+
+}
+
+
+
+.colorimages:hover {
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+} */
+
+#brushtool {
+    border: 1px solid antiquewhite;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+
+#brushpicture {
+    height: 50px;
+    width: 50px;
+    margin-top: 8px;
+}
+
+#brushpicture { 
+    transition: all .5s ease-in-out; 
+    }
+    
+#brushpicture:hover { 
+    transform: scale(0.9); 
+    }
+
+#othertools {
+    border: 1px solid rgb(255, 237, 214);
+    width: 110px;
+    height: 100px;
+    margin-left:10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(255, 237, 214);
+}
+    
+.undoredo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    transform: perspective(1500px) rotateY(20deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: transform 1s ease 0s;
+    
+    &:hover {
+        transform: perspective(3000px) rotateY(5deg);
+    }
+}
+
+.pickr-container{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid rgb(239, 210, 170);
+    border-radius: 20px;
+    background-color: rgb(239, 210, 170);
+}
+
+.pcr-button{
+    margin-top: 40px;
+}
+
+#banner {
+    width: 368px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#logobanner {
+    width: 368px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+#verticalcontainer {
+    margin-top: 2px;
+    display: flex;
+    gap: 10px;
+}
+
+.shapes {
+    border: 1px solid rgb(166, 247, 247);
+    width: 100px;
+    height: 200px;
+    margin-top: 10PX;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(166, 247, 247);
+}
+
+.tool{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    transform: perspective(1500px) rotateY(20deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: transform 1s ease 0s;
+
+    &:hover {
+        transform: perspective(3000px) rotateY(5deg);
+    }
+}
+
+#painttools {
+    border: 1px solid rgb(223, 201, 171);
+    width: 100px;
+    height: 270px;
+    margin-top: 10PX;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(223, 201, 171);
+
+}
+
+.iconpainttool {
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+
+    transform: perspective(1500px) rotateY(20deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: transform 1s ease 0s;
+
+    &:hover {
+        transform: perspective(3000px) rotateY(5deg);
+    }
+
+}
+
+.clearsave{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+
+#drawingboard {
+    border: 1px solid lightcoral;
+    border-width: 3px;
+    height: 600px;
+    width: 1350px;
+    margin-top: 10PX;
+}
+
+#drawingboard canvas{
+    background-color:white;
+    cursor: crosshair;
+    width: 100%;
+    height: 100%;
+}

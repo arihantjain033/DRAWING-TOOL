@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAINT TOOL</title>
+    <!-- LINKING STYLESHEET CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="PAINT TOOL CSS.css" />
+    <link rel="Website icon" href="FEVICON/logo.jpg" type=".jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body id="body">
+    <!-- HORIZONTAL ROW DIV FULL-->
+    <div id="horizontalrow">
+      <!-- FIRST BOX INCLUDE FILE,INSERT ETC. -->
+      <div id="firstbox">
+        <button class="buttonfirstbox"><a href="#" style="color: black; text-decoration: none;">File</a></button><br />
+        <button class="buttonfirstbox"><a href="#" style="color: black; text-decoration: none;">Insert</a></button><br />
+        <button class="buttonfirstbox"><a href="#" style="color: black; text-decoration: none;">View</a></button><br />
+        <button class="buttonfirstbox"><a href="#" style="color: black; text-decoration: none;">Help</a></button><br />
+      </div>
+      <!-- TEXT EDITORS AND MORE -->
+      <div id="texteditors">
+        <b> Text Editor</b> <br />
+        <img class="editors" id="bold" src="ICONS/icons8-bold-50.png" alt="bold">
+        <img class="editors" id="italic" src="ICONS/icons8-italic-50.png" alt="italic">
+        <img class="editors" id="underline" src="ICONS/icons8-underline-50.png" alt="underline">
+        <select name="size" id="size" >
+          <option value="-">-</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+        </select> 
+        <img id="addtext" src="ICONS/icons8-add-text-48.png" alt="add-text">
+      </div>
+      <!-- LINE SIZE CHANGE BOX -->
+      <div id="linesize">
+        <b> LINE SIZE</b> <br>
+        <img class="lines" id="line1" src="COLOR/Black-solid-color-background.jpg" alt="line1"> <br>
+        <img class="lines" id="line2" src="COLOR/Black-solid-color-background.jpg" alt="line1"> <br>
+        <img class="lines" id="line3" src="COLOR/Black-solid-color-background.jpg" alt="line4"> <br>
+        <img class="lines" id="line4" src="COLOR/Black-solid-color-background.jpg" alt="line4"> <br>
+      </div>
+
+      <!-- COLOR OPTION BOX -->
+      <div id="colors">
+        <b> Colors </b><br>
+        <img class="colorimages" id="black" src="COLOR/black.jpg" alt="black">
+        <img class="colorimages" id="brown" src="COLOR/brown.jpg" alt="brown">
+        <img class="colorimages" id="crimson" src="COLOR/crimson.jpg" alt="crimson">
+        <img class="colorimages" id="cyan" src="COLOR/cyan.jpg" alt="cyan">
+        <img class="colorimages" id="dark blue" src="COLOR/dark blue.jpg" alt="dark blue">
+        <img class="colorimages" id="dark green" src="COLOR/dark green.jpg" alt="dark green">
+        <img class="colorimages" id="gold" src="COLOR/gold.jpg" alt="gold">
+        <img class="colorimages" id="grey" src="COLOR/grey.jpeg" alt="grey"> <br>
+        <img class="colorimages" id="orange" src="COLOR/orange.jpg" alt="orange">
+        <img class="colorimages" id="yellow" src="COLOR/yellow.jpg" alt="yellow">
+        <img class="colorimages" id="vilot" src="COLOR/vilot.jpg" alt="vilot">
+        <img class="colorimages" id="sky blue" src="COLOR/sky blue.jpeg" alt="sky blue">
+        <img class="colorimages" id="silver" src="COLOR/silver.jpg" alt="silver">
+        <img class="colorimages" id="red" src="COLOR/red.jpg" alt="red">
+        <img class="colorimages" id="pink" src="COLOR/pink.jpg" alt="pink">
+        <img class="colorimages" id="parrot" src="COLOR/parrot.jpg" alt="parrot">
+        
+      </div>
+
+      <div class="option active tool" id="brushtool">
+        <b> Brush </b><br>
+        <img id="brushpicture" src="ICONS/icons8-krita-48.png" height="40px">
+      
+      </div>
+
+      <div id="othertools"> Undo-Redo
+        <img class="undoredo" id="undo" src="ICONS/icons8-undo-50.png" alt="undo">
+        <img class="undoredo" id="redo" src="ICONS/icons8-redo-100.png" alt="redo">
+      </div>
+      
+      <div class="pickr-container">
+        <div class="color-picker"></div>
+      </div>
+
+
+      
+      
+      <div id="banner">
+        <img id="logobanner" src="Logo banner.jpg" alt="logo">
+      </div>
+
+      <div id="undoredo"></div>
+    </div>
+
+    <!-- VERTICAL DIV ELEMENT -->
+    <div id="verticalcontainer">
+      <div class="column">
+        <div class="shapes">
+          <img class="option tool" id="square" src="ICONS/icons8-square-64.png" alt="Square" />
+          <img class="option tool" id="arrow" src="ICONS/icons8-arrow-64.png" alt="Arrow" />
+          <img class="option tool" id="triangle" src="ICONS/icons8-triangle-64.png" alt="triangle" />
+          <img class="option tool" id="circle" src="ICONS/icons8-circle-64.png" alt="circle"/>
+          <img class="option tool" id="cloud" src="ICONS/icons8-cloud-64.png" alt="cloud" />
+          <img class="option tool" id="cylinder" src="ICONS/icons8-cylinder-24.png" alt="cylinder"/>
+          <img class="option tool" id="hear" src="ICONS/icons8-heart-64.png" alt="heart" />
+          <img class="option tool" id="hexagon" src="ICONS/icons8-hexagon-64.png" alt="hexagon" />
+        </div>
+        <div id="painttools">
+          <img class="iconpainttool" id="color-picker" src="ICONS/icons8-color-picker-64.png" alt="color-picker">
+          <img class="iconpainttool" id="eraser" src="ICONS/icons8-eraser-64.png" alt="eraser">
+          <img class="iconpainttool" id="fill-color" src="ICONS/icons8-fill-color-48.png" alt="fill-color">
+          <img class="iconpainttool" id="pen" src="ICONS/icons8-pen-64.png" alt="pen">
+          <img class="iconpainttool" id="pencil" src="ICONS/icons8-pencil-100.png" alt="pencil">
+          <img class="iconpainttool" id="magnifying-glass" src="ICONS/icons8-magnifying-glass-64.png" alt="magnifying-glass">
+          <img class="iconpainttool" id="spray-can" src="ICONS/icons8-spray-can-64.png" alt="spray-can">
+          <img class="iconpainttool" id="stamp" src="ICONS/icons8-stamp-94.png" alt="stamp">
+          <img class="iconpainttool" id="type" src="ICONS/icons8-type-64.png" alt="type">
+          <img class="iconpainttool" id="move" src="ICONS/icons8-move-48.png" alt="move">
+          <img class="iconpainttool" id="hand" src="ICONS/icons8-hand-94.png" alt="hand">
+        
+        </div>
+        <div id="clearsavebuttons">
+          <button class="clearsave" id="clear-canvas">Clear Canvas</button>
+          <button class="clearsave" id="save-canvas">Save Canvas</button>
+        </div>
+      </div>
+      <div class="column">
+
+
+        <section id="drawingboard">
+          <canvas id="can"></canvas>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="JAVASCRIPT.js"></script>
+    
+  </body>
+</html>
